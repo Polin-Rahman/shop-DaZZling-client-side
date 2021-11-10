@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Classic White Christmas Lights",
+        "img": "https://i.ibb.co/q0mGwtd/lg-1.jpg",
+        "detail": "When it doubt, go with a classic. White outdoor Christmas lights keep it simple, and allow you to add a mix of other playful decorations to your lawn (if you want to!).",
+        "price": 10.99
+    },
+    {
+        "name": "Traditional Multi Color String Lights",
+        "img": "https://i.ibb.co/Wf602Mx/lg-2.jpg",
+        "detail": "Looking for the traditional colored Christmas lights you grew up with? These are a close match, and good for indoor/outdoor use. ",
+        "price": 9.99
+    },
+    {
+        "name": "Old-Fashioned - LED String Lights",
+        "img": "https://i.ibb.co/9ThcLqv/lg-3.jpg",
+        "detail": "C6-style bulbs bring a dose of nostalgia to your display, but an LED version consumes a lot less energy and gives off less heat. Your electricity bill will thank you",
+        "price": 11
+    },
+    {
+        "name": "Classic Icicle Lights",
+        "img": "https://i.ibb.co/bK5SB74/lg-4.jpg",
+        "detail": "This holiday standby gives you so much more dazzle than a single strand. Consider it an essential part of any serious decorators arsenal.",
+        "price": 18
+    },
+    {
+        "name": "Mini Globe Multi Color LED Lights",
+        "img": "https://i.ibb.co/M10KBff/lg-5.jpg",
+        "detail": "These lights — which come in colors, plus white and warm white — have a wireless smart control feature that lets you change the flashing pattern, timers, and brightness via an app.",
+        "price": 17.99
+    },
+    {
+        "name": "Twinkle String Christmas Lights",
+        "img": "https://i.ibb.co/QdyShFg/lg-6.jpg",
+        "detail": "These almost look like those old-fashioned Christmas lights, but this string has the power to twinkle, flash, and show six other light modes. ",
+        "price": 16.99
+    },
+    {
+        "name": "LED Multicolor Ball Lights",
+        "img": "https://i.ibb.co/pZybHpG/lg-7.jpg",
+        "detail": "This battery-operated option goes wherever you want it to go — no extension cords required. ",
+        "price": 15.98
+    },
+    {
+        "name": "Outdoor Solar Garden Lights",
+        "img": "https://i.ibb.co/d2YXxjh/lg-8.jpg",
+        "detail": "These solar-powered lights will add even more holiday sparkle to your outdoor Christmas decorations. Plus, its a versatile design so you can use them year-round.",
+        "price": 17.59
+    },
+    {
+        "name": "LED Snowflake Projector Light",
+        "img": "https://i.ibb.co/GsHw3Hm/lg-9.jpg",
+        "detail": "Decorate your home in a flash with this projector, which creates the effect of falling snow in or outside your home. You have all the power to change up the lights and color scheme with a remote control.",
+        "price": 29.99
+    },
+    {
+        "name": "Garden Laser Light With Remote Control",
+        "img": "https://i.ibb.co/N9xDwD6/lg-10.jpg",
+        "detail": "No ladders, no hassle — just point this single laser light toward your homes facade and you get thousands of red and green twinkles in an instant.",
+        "price": 49.99
+    }
+]
