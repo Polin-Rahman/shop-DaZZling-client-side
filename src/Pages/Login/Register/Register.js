@@ -27,16 +27,16 @@ const Register = () => {
         e.preventDefault();
     }
     return (
-        <div>
+        <div className="container">
             <div className="mx-auto">
-                <h2 className="text-center mt-5">Please Register</h2>
+                <h2 className="text-center mt-5">Please Register <i className="fas fa-user-edit"></i></h2>
                 {
                     isLoading &&
                     <div className="d-flex justify-content-center">
                         <Spinner animation="border" variant="secondary" />
                     </div>
                 }
-                <div className="w-50 mx-auto">
+                <div className="w-75 mx-auto">
                     <form onSubmit={handelLoginSubmit}>
                         <label htmlFor="text">Your Name: </label>
                         <input
@@ -64,13 +64,8 @@ const Register = () => {
 
 
                 </div>
-                <p className="text-center mt-3 mb-1">Already Registered ? <Link to="/login">Log In</Link></p>
-                <p className="text-center mb-2">Or</p>
-                <div className="d-flex justify-content-center">
-                    <button
+                <h5 className="text-center mt-3 mb-1">Already Registered ? <Link to="/login">Log In</Link></h5>
 
-                        className="btn btn-dark">Google Sign-In</button>
-                </div>
                 {
                     user?.email && <div className="alert alert-success" role="alert">
                         Loggedin successfully!

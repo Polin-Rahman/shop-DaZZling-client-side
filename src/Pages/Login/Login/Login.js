@@ -31,16 +31,16 @@ const Login = () => {
         signInWithGoogle(location, history);
     }
     return (
-        <div>
+        <div className="container">
             <div className="mx-auto">
-                <h2 className="text-center mt-5">Log In</h2>
+                <h2 className="text-center mt-5"><i className="fas fa-sign-in-alt"></i> Log-In</h2>
                 {
                     isLoading &&
                     <div className="d-flex justify-content-center">
                         <Spinner animation="border" variant="secondary" />
                     </div>
                 }
-                <div className="w-50 mx-auto">
+                <div className="w-75 mx-auto">
                     <form onSubmit={handelLoginSubmit}>
                         <label htmlFor="email">Email: </label>
                         <input
@@ -54,7 +54,8 @@ const Login = () => {
                         <input type="submit" value="Log In" className="btn btn-warning" />
                     </form>
                 </div>
-                <p className="text-center mt-5 mb-3">New User ? <Link to="/register">Create Account</Link></p>
+                <h5 className="text-center mt-5 mb-3">New User ? <Link to="/register">Create Account</Link></h5>
+                <p className="text-center mb-2">Or</p>
                 <div className="d-flex justify-content-center">
                     <button
                         onClick={handelGoogleSignIn}

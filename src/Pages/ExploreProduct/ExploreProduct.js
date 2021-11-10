@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ExploreProduct = ({ product }) => {
 
-    const { name, img, detail, price } = product;
+    const { name, img, detail, price, _id } = product;
 
     return (
         <div>
@@ -20,7 +21,9 @@ const ExploreProduct = ({ product }) => {
                                 Offer Price: ${price}
                             </strong>
                         </Card.Text>
-                        <Button variant="outline-dark">Purchase Now</Button>
+                        <Link to={`/purchase/${_id}`}>
+                            <Button variant="outline-dark">Purchase Now</Button>
+                        </Link>
                     </Card.Body>
                 </Card>
             </div>
