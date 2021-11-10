@@ -10,7 +10,7 @@ const Products = () => {
     useEffect(() => {
         setISLoading(true);
 
-        fetch('./light-fake-data.json')
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => {
                 setISLoading(false);
@@ -23,7 +23,7 @@ const Products = () => {
 
     return (
         <div className="container my-5">
-            <h1 className="text-center fst-italic">Explore all Exciting Collections</h1>
+            <h1 className="text-center fst-italic">Our Collections</h1>
             {
                 isLoading &&
                 <div className="d-flex justify-content-center">
