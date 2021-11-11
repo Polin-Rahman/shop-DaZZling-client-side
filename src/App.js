@@ -12,6 +12,10 @@ import Register from './Pages/Login/Register/Register';
 import ExploreProducts from './Pages/ExploreProducts/ExploreProducts';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
+import Pay from './Pages/Dashboard/Pay/Pay';
+import Review from './Pages/Dashboard/Review/Review';
 
 function App() {
   return (
@@ -36,6 +40,18 @@ function App() {
             </Route>
             <PrivateRoute path="/purchase/:id">
               <Purchase></Purchase>
+            </PrivateRoute>
+            <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
+            <PrivateRoute path="/myOrders">
+              <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path="/pay">
+              <Pay></Pay>
+            </PrivateRoute>
+            <PrivateRoute path="/review">
+              <Review></Review>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>

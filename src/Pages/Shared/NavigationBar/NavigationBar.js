@@ -22,8 +22,9 @@ const NavigationBar = () => {
 
                         <Nav.Link> <NavLink className="custom-nav-text" to="/exploreProducts">Explore More</NavLink></Nav.Link>
 
-                        <Nav.Link> <NavLink className="custom-nav-text" to="/purchase">Purchase</NavLink></Nav.Link>
-
+                        {
+                            user.email && <Nav.Link> <NavLink className="custom-nav-text" to="/dashboard">Dashboard</NavLink></Nav.Link>
+                        }
 
                         {
                             user.email && <Navbar.Text>
