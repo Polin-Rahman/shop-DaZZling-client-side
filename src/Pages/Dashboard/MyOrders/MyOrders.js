@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
-import DashboardNav from '../DashboardNav/DashboardNav';
 
 const MyOrders = () => {
 
@@ -35,7 +34,6 @@ const MyOrders = () => {
 
     return (
         <>
-            <DashboardNav></DashboardNav>
             <div className="container mb-5">
                 <h2 className="text-center fst-italic my-5">Your have {orders.length} orders</h2>
                 <div className="row">

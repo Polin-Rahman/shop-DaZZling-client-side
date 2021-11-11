@@ -1,6 +1,5 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import DashboardNav from '../DashboardNav/DashboardNav';
 import './Review.css';
 
 const Review = () => {
@@ -28,7 +27,6 @@ const Review = () => {
 
     return (
         <>
-            <DashboardNav></DashboardNav>
             <div className="container my-5 review-containar">
                 <h3 className="text-center fst-italic">Please give your valuable review</h3>
 

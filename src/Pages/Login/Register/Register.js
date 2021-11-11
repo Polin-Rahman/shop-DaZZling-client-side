@@ -67,13 +67,13 @@ const Register = () => {
                 <h5 className="text-center mt-3 mb-1">Already Registered ? <Link to="/login">Log In</Link></h5>
 
                 {
-                    user?.email && <div className="alert alert-success" role="alert">
+                    user?.email && <div className="alert alert-success mt-5 w-50" role="alert">
                         Loggedin successfully!
                     </div>
                 }
 
                 {
-                    authError && <div className="alert alert-danger" role="alert">
+                    authError && <div className="alert alert-danger mt-5 w-50" role="alert">
                         {authError}
                     </div>
                 }
