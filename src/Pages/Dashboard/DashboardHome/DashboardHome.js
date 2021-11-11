@@ -1,9 +1,12 @@
 import React from 'react';
+import welcome from '../../../images/welcome.jpg';
 
 const DashboardHome = () => {
     return (
         <div>
-            <h3>Dashboard Home</h3>
+            <div className="mt-5">
+                <img src={welcome} alt="" className="img-fluid"></img>
+            </div>
         </div>
     );
 };

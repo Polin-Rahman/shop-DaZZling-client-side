@@ -43,8 +43,8 @@ const MyOrders = () => {
                             <div className="col-sm-6">
                                 <div className="card">
                                     <div className="card-header">
-                                        <i className="fas fa-shopping-cart m-1 fs-4"></i>
-                                        {order.status}
+                                        <i className="fas fa-shopping-cart m-1"></i>
+                                        <strong>{order.status}</strong>
                                     </div>
                                     <div className="card-body">
                                         <h5 className="card-title fst-italic">{order.userName}</h5>
