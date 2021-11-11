@@ -36,8 +36,8 @@ const MyOrders = () => {
     return (
         <>
             <DashboardNav></DashboardNav>
-            <div className="container">
-                <h2 className="text-center fst-italic my-5">My Orders</h2>
+            <div className="container mb-5">
+                <h2 className="text-center fst-italic my-5">Your have {orders.length} orders</h2>
                 <div className="row">
                     {
                         orders.map(order => (
