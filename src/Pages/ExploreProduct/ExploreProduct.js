@@ -9,11 +9,11 @@ const ExploreProduct = ({ product }) => {
     return (
         <div>
             <div className="col">
-                <Card>
-                    <Card.Img variant="top" src={img} />
+                <Card style={{ height: '560px' }}>
+                    <Card.Img variant="top" src={img} style={{ height: '250px' }} />
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
-                        <div style={{ height: '9rem' }}>
+                        <div style={{ height: '140px' }}>
                             <Card.Text>{detail}</Card.Text>
                         </div>
                         <Card.Text>

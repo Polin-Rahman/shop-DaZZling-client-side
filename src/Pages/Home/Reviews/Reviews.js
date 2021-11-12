@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Review from '../Review/Review';
+import ReviewSingle from '../ReviewSingle/ReviewSingle';
 
 const Reviews = () => {
 
@@ -14,16 +14,16 @@ const Reviews = () => {
     }, [])
 
     return (
-        <div className="container" style={{ marginTop: '100px' }}>
+        <div className="container" style={{ marginTop: '120px' }}>
             <h1 className="text-center fst-italic" >Customer Reviews</h1>
 
             <div className="row row-cols-2 row-cols-md-5 g-4 mt-5">
 
                 {
-                    reviews.map(review => <Review
+                    reviews.map(review => <ReviewSingle
                         key={review._id}
                         review={review}
-                    ></Review>)
+                    ></ReviewSingle>)
                 }
 
             </div>

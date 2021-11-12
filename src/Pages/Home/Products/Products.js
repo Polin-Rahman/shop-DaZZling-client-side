@@ -22,7 +22,7 @@ const Products = () => {
     // console.log(sixProducts);
 
     return (
-        <div className="container my-5">
+        <div className="container" style={{ marginTop: '120px' }}>
             <h1 className="text-center fst-italic">Our Collections</h1>
             {
                 isLoading &&
@@ -31,7 +31,7 @@ const Products = () => {
                 </div>
             }
 
-            <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
+            <div className="row row-cols-1 row-cols-md-4 g-4 mt-3">
                 {
                     sixProducts.map(product => <Product
                         key={product._id}

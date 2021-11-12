@@ -1,6 +1,6 @@
 import React from 'react';
 import Rating from 'react-rating';
-import './Review.css';
+import './ReviewSingle.css';
 
 const Review = ({ review }) => {
     const { name, description, rating } = review;

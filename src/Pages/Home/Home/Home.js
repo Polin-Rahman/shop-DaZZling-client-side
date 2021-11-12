@@ -1,5 +1,6 @@
 import React from 'react';
 import NavigationBar from '../../Shared/NavigationBar/NavigationBar';
+import BlogPosts from '../BlogPosts/BlogPosts';
 import Footer from '../Footer/Footer';
 import Products from '../Products/Products';
 import Reviews from '../Reviews/Reviews';
@@ -13,7 +14,7 @@ const Home = () => {
             <TopBanner></TopBanner>
             <Products></Products>
             <Reviews></Reviews>
-            {/* extra section */}
+            <BlogPosts></BlogPosts>
             <Footer></Footer>
         </div>
     );

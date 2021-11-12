@@ -8,11 +8,11 @@ const Product = ({ product }) => {
 
     return (
         <div className="col">
-            <Card>
-                <Card.Img variant="top" src={img} />
+            <Card style={{ height: '540px' }}>
+                <Card.Img variant="top" src={img} style={{ height: '250px' }} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
-                    <div style={{ height: '9rem' }}>
+                    <div style={{ height: '125px' }}>
                         <Card.Text>{detail}</Card.Text>
                     </div>
                     <Card.Text>
