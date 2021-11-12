@@ -17,7 +17,7 @@ const Reviews = () => {
         <div className="container" style={{ marginTop: '120px' }}>
             <h1 className="text-center fst-italic" >Customer Reviews</h1>
 
-            <div className="row row-cols-2 row-cols-md-5 g-4 mt-5">
+            <div className="row row-cols-2 row-cols-md-6 g-4 mt-5">
 
                 {
                     reviews.map(review => <ReviewSingle

@@ -9,7 +9,7 @@ const Review = ({ review }) => {
 
             <div className="card text-center border-0">
 
-                <div className="card-body">
+                <div className="card-body" style={{ height: '200px' }}>
                     <i className="fas fa-user-circle fs-1 text-secondary"></i>
                     <h6 className="card-title">{name}</h6>
                     <p className="card-text">{description}</p>
