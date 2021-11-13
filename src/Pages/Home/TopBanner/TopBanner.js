@@ -1,9 +1,11 @@
 import React from 'react';
 import topBanner from '../../../images/top-bg.jpg';
+import './TopBanner.css';
+
 const TopBanner = () => {
     return (
-        <div>
-            <img src={topBanner} className="w-100" style={{ height: '450px' }} alt="" />
+        <div className="">
+            <img src={topBanner} className="w-100 banner-img" style={{ height: '450px' }} alt="" />
 
             <div className="my-5">
                 <h1 className="text-center fst-italic">Welcome to shop DaZZling<i className="fas fa-feather"></i></h1>

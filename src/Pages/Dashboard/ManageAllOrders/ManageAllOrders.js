@@ -6,7 +6,7 @@ const ManageAllOrders = () => {
     const [update, setUpdate] = useState({});
 
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://agile-escarpment-19572.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -17,7 +17,7 @@ const ManageAllOrders = () => {
             status: 'Approved'
         }
         setUpdate(updated);
-        const url = `http://localhost:5000/allOrders/${id}`;
+        const url = `https://agile-escarpment-19572.herokuapp.com/allOrders/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -38,7 +38,7 @@ const ManageAllOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to cancel?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://agile-escarpment-19572.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

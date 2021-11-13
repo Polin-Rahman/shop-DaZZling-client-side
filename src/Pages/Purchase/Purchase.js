@@ -15,7 +15,7 @@ const Purchase = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://agile-escarpment-19572.herokuapp.com/products/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -28,7 +28,7 @@ const Purchase = () => {
         //console.log(data)
         delete data._id;
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://agile-escarpment-19572.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

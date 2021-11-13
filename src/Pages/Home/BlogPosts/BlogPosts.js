@@ -50,7 +50,7 @@ const BlogPosts = () => {
 
             <h5 className="fst-italic text-center mt-5">Subscribe Us for regular new blog post!</h5>
             <div className="d-flex justify-content-center">
-                <div class="input-group my-3 w-50">
+                <div class="input-group my-3 w-75">
                     <input type="text" class="form-control" placeholder="Your email" />
                     <button class="btn btn-outline-success" type="button" id="button-addon2">Subscribe</button>
                 </div>

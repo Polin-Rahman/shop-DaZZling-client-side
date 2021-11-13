@@ -5,7 +5,7 @@ const ManageProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://agile-escarpment-19572.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
@@ -16,7 +16,7 @@ const ManageProducts = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to Delet?');
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://agile-escarpment-19572.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

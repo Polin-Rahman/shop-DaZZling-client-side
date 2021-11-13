@@ -9,7 +9,7 @@ const Review = () => {
 
     const onSubmit = data => {
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://agile-escarpment-19572.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

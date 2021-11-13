@@ -11,7 +11,7 @@ const ExploreProducts = () => {
     useEffect(() => {
         setISLoading(true);
 
-        fetch('http://localhost:5000/products')
+        fetch('https://agile-escarpment-19572.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setISLoading(false);

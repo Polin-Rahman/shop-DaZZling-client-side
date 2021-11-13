@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Product from '../Product/Product';
 
 const Products = () => {
@@ -10,7 +11,7 @@ const Products = () => {
     useEffect(() => {
         setISLoading(true);
 
-        fetch('http://localhost:5000/products')
+        fetch('https://agile-escarpment-19572.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setISLoading(false);
@@ -38,6 +39,12 @@ const Products = () => {
                         product={product}
                     ></Product>)
                 }
+            </div>
+
+            <div className="d-flex justify-content-center mt-5">
+                <Link to="/exploreProducts">
+                    <button className="btn btn-dark">Explore More</button>
+                </Link>
             </div>
         </div >
     );
